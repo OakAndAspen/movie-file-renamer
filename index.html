@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Oak & Aspen - Movie File Renamer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<style>
+    body {
+        font-family: 'Balsamiq Sans', sans-serif;
+    }
+
+    td {
+        padding: 10px;
+    }
+</style>
+
+<body>
+
+<div class="container py-4">
+        <h3 class="text-center my-4">Movie File Renamer</h3>
+        <table class="mx-auto">
+            <tbody>
+            <tr>
+                <td>
+                    <label for="txtFilm">Nom du film</label>
+                </td>
+                <td>
+                    <input type="text" class="form-control" id="txtFilm"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="txtAnnee">Année</label>
+                </td>
+                <td>
+                    <input type="text" class="form-control" id="txtAnnee"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sltQualite">Qualité</label>
+                </td>
+                <td>
+                    <select id="sltQualite" class="form-control">
+                        <option value="1080p">1080p</option>
+                        <option value="720p">720p</option>
+                        <option value="480p">480p</option>
+                        <option value="good">good</option>
+                        <option value="bad">bad</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Langue</label>
+                </td>
+                <td>
+                    <div class="form-check">
+                        <input class="cbxLangue form-check-input" type="checkbox" value="en" id="en">
+                        <label class="form-check-label" for="en">
+                            Anglais
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="cbxLangue form-check-input" type="checkbox" value="fr" id="fr">
+                        <label class="form-check-label" for="fr">
+                            Français
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="cbxLangue form-check-input" type="checkbox" value="sv" id="sv">
+                        <label class="form-check-label" for="sv">
+                            Suédois
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="cbxLangue form-check-input" type="checkbox" value="de" id="de">
+                        <label class="form-check-label" for="de">
+                            Allemand
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="cbxLangue form-check-input" type="checkbox" value="jp" id="jp">
+                        <label class="form-check-label" for="jp">
+                            Japonais
+                        </label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <code id="txtFileName"></code>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button class="btn btn-info w-100" data-clipboard-text="">
+                        Copier dans le presse-papier
+                    </button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
