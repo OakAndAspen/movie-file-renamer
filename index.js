@@ -32,9 +32,9 @@ $(() => {
 
         // Caractères à remplacer par des _
         s = s.replace(/ /g, '_');
-        s = s.replace(/'/g, '_');
 
         // Caractères à supprimer
+        s = s.replace(/'/g, '');
         s = s.replace(/!/g, '');
         s = s.replace(/:/g, '');
         s = s.replace(/,/g, '');
